@@ -29,6 +29,7 @@ Creates a readable stream of binary media data. `options` can have the following
 * `requestOptions` - Any options you want to pass to [miniget](https://github.com/fent/node-miniget), such as `headers`.
 * `refreshInterval` - How often to refresh the playlist. If end of segment list is approached before the next interval, then it will refresh sooner.
 * `onComplete` - Download complete callback.
+* `onError` - Download error callback.
 * `outFile` - File path for saving m3u8 video, simple way to download video. If specified, we will not return `Stream`, cus you have no need to deal with it.
 * `resumeLoad` - Is resume downloading from last segment enable, better in vod videos. Default is false. When downloading live videos, it should keep false.
 
